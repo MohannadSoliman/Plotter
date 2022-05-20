@@ -49,6 +49,9 @@ class Validator:
         """
         Checks if there're unbalanced brackets like : 2*(4*x)(
         """
+
+        if(self.polynomial[-1] == '('):
+             return True
         size = len(self.polynomial)
         if size == 0:
             return True
@@ -108,7 +111,7 @@ class Validator:
         if self.is_unbalanced_brackets():
             return "Invalid Expression!\nUnbalanced Parentheses!"
         if self.is_invalid_expression():
-            return "Invalid Expression! Check for:\n- Missing '*' Between Constant and Variable\n- Wrong Decimal Point"
+            return "Invalid Expression! Check for:\n- Missing '*' Between Constant and Variable\n- Wrong Decimal Point\n- Unbalanced Parentheses"
         if self.is_invalid_range():
             return "Invalid Range!\nMake Sure Min and Max Are Numeric"
 
