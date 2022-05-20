@@ -1,7 +1,6 @@
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import (FigureCanvasTkAgg, NavigationToolbar2Tk)
 import numpy as np
-import math
 class Figure_Grapher:
     def __init__(self, window) -> None:
         self.window = window

@@ -1,9 +1,7 @@
 import tkinter as tk
 from tkinter import *
-from tkinter import ttk
 from tkinter.messagebox import showinfo
 
-from matplotlib.ft2font import BOLD
 
 from figure_grapher import Figure_Grapher
 from validator import Validator
